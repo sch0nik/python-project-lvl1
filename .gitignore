@@ -3,3 +3,6 @@ brain_games/__pycache__
 brain_games/scripts/__pycache__
 .venv
 dist
+brain_games/.cli.py.swp
+setup.cfg
+*.save
