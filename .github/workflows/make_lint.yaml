@@ -9,9 +9,8 @@ jobs:
     steps:
       # make depends on poetry
       - name: Install dependencies
-        run: |
+        run:
           pip install poetry
-          make install
       - name: Run linter and pytest
-        run: |
+        run: 
           make lint
