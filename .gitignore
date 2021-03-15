@@ -4,5 +4,6 @@ brain_games/scripts/__pycache__
 .venv
 dist
 brain_games/.cli.py.swp
-setup.cfg
 *.save
+*.sh
+
