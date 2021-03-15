@@ -1,4 +1,4 @@
-name: Linter
+name: Lint
 
 on:
   - push
@@ -7,10 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # make depends on poetry
+      - uses: actions/checkout@v2
       - name: Install dependencies
-        run:
+        run: |
           pip install poetry
+          make install
       - name: Run linter and pytest
-        run: 
+        run: |
           make lint
