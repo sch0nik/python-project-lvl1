@@ -7,3 +7,4 @@ brain_games/.cli.py.swp
 *.save
 *.sh
 
+.idea
