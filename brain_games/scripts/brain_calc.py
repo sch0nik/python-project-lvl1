@@ -10,17 +10,18 @@ from random import randint
 from prompt import string
 
 
-def calc(operator, number_a, number_b):
+def calc(number_a, number_b):
     """
     Получение результата вычислений.
 
     Args:
-        operator: символ оператора в виде строки.
         number_a: целое число.
         number_b: целое число.
+
     Returns:
         результат вычисления, в зависимости от operator.
     """
+    operator = '+-*'[randint(0, 2)]
     print(f'Question: {number_a} {operator} {number_b}')
     if operator == '+':
         return number_a + number_b
@@ -35,6 +36,7 @@ def compare(right_answer):
 
     Args:
         right_answer: integer number
+
     Returns:
         True или False в зависимости от результата
     """
@@ -57,8 +59,7 @@ def main():
     current_round = 1
 
     while current_round <= 3:
-        operator = '+-*'[randint(0, 2)]
-        right_answer = calc(operator, randint(0, 100), randint(0, 100))
+        right_answer = calc(randint(0, 100), randint(0, 100))
 
         if compare(right_answer):
             print('Correct!')
