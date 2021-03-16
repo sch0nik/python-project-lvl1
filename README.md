@@ -5,5 +5,6 @@
 
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
-Установка пакета и поражение https://asciinema.org/a/jjp6EzD1ApIuHC3iQp2ybhpP7
-Установка пакета и победа https://asciinema.org/a/RU0lq7tGSw6jTYaCG1gMKHpdo
+Установка пакета brain_even и поражение https://asciinema.org/a/jjp6EzD1ApIuHC3iQp2ybhpP7
+Установка пакета brain_even и победа https://asciinema.org/a/RU0lq7tGSw6jTYaCG1gMKHpdo
+Игра Brain-calc https://asciinema.org/a/mhBWRX0qzm3S1uzJYG70I7rma
