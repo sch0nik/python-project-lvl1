@@ -9,3 +9,4 @@
 Установка пакета brain-even и победа https://asciinema.org/a/RU0lq7tGSw6jTYaCG1gMKHpdo
 Игра калькулятор brain-calc https://asciinema.org/a/mhBWRX0qzm3S1uzJYG70I7rma
 Игра НОД brain-gcd https://asciinema.org/a/WyeG4VZli7eharPM6dr037Ddp
+Игра арифметическая прогрессия brain-progression https://asciinema.org/a/u2sLqjJYkGKWq0rTdJqJZN2fv
