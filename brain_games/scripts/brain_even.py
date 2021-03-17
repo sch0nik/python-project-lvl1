@@ -34,7 +34,11 @@ def main():
     answer = f'{answer} is wrong answer ;(. Correct answer was {right_answer}.'
     if current_round == -1:
         print(answer)
+<<<<<<< HEAD
         print(f"Let's try again, {name}!")
+=======
+        print(f"Let's try again, {name}")
+>>>>>>> 9f3a9951f2db4a700ee4e91bfa5467dd9bfc6a55
     else:
         print(f'Congratulations, {name}!')
 
