@@ -34,6 +34,7 @@ def main():
     answer = f'{answer} is wrong answer ;(. Correct answer was {right_answer}.'
     if current_round == -1:
         print(answer)
+        print(f"Let's try again, {name}")
     else:
         print(f'Congratulations, {name}!')
 
