@@ -5,6 +5,8 @@
 
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
+[![Lint](https://github.com/sch0nik/python-project-lvl1/actions/workflows/make_lint.yaml/badge.svg)](https://github.com/sch0nik/python-project-lvl1/actions/workflows/make_lint.yaml)
+
 Установка пакета brain-even и поражение https://asciinema.org/a/jjp6EzD1ApIuHC3iQp2ybhpP7
 
 Установка пакета brain-even и победа https://asciinema.org/a/RU0lq7tGSw6jTYaCG1gMKHpdo

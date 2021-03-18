@@ -6,13 +6,13 @@
 main() - пока только эта функция.
 """
 
-from brain_games.cli import welcom_user
+from brain_games.cli import welcome_user
 
 
 def main():
     """Главная функция."""
     print('Welcome to the Brain Games!')
-    welcom_user()
+    welcome_user()
 
 
 if __name__ == '__main__':
