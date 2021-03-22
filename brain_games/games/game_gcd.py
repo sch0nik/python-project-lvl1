@@ -12,8 +12,8 @@ def game():
     Returns:
         True или False, в зависимости от ответа пользователя.
     """
-    number_a = randint(0, 100)
-    number_b = randint(0, 100)
+    number_a = randint(1, 100)
+    number_b = randint(1, 100)
     print(f'Question: {number_a} {number_b}')
     while number_a != 0 and number_b != 0:
         if number_a > number_b:
