@@ -24,6 +24,7 @@ def game():
 
     answer = string('Your answer: ')
     if answer == str(right_answer):
+        print('Correct!')
         return True
     print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
     return False
