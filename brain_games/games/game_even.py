@@ -23,6 +23,5 @@ def game():
         print('Correct!')
         return True
     else:
-        answer = f'{answer} is wrong answer ;(. Correct answer was {right_answer}.'
-        print(answer)
+        print(f'{answer} is wrong answer ;(. Correct answer was {right_answer}.')
     return False
