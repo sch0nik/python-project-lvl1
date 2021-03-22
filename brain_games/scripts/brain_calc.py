@@ -4,70 +4,22 @@
 Пользователю предлагается решить простой пример.
 """
 
-from random import randint
-
-from prompt import string
-
-
-def calc(number_a, number_b):
-    """
-    Получение результата вычислений.
-
-    Args:
-        number_a: целое число.
-        number_b: целое число.
-
-    Returns:
-        результат вычисления, в зависимости от operator.
-    """
-    operator = '+-*'[randint(0, 2)]
-    print(f'Question: {number_a} {operator} {number_b}')
-    if operator == '+':
-        return number_a + number_b
-    elif operator == '-':
-        return number_a - number_b
-    return number_a * number_b
-
-
-def compare(right_answer):
-    """
-    Получение ответа пользователя и сравнение его с текущим.
-
-    Args:
-        right_answer: integer number
-
-    Returns:
-        True или False в зависимости от результата
-    """
-    answer = string('Your answer: ')
-    if answer == str(right_answer):
-        return True
-    answer = f'{answer} is wrong answer ;(. Correct answer was {right_answer}.'
-    print(answer)
-    return False
+from brain_games.cli import welcome_user
+from brain_games.games.game_calc import game
+from brain_games.games.game_engine import engine
 
 
 def main():
     """Тело игры."""
     print('Welcome to the Brain Games!')
-    # запрос имени, приветсвие и правила игры
-    name = string('May I have your name? ')
+    name = welcome_user()
     print(f'Hello, {name}!')
     print('What is the result of the expression?')
 
-    current_round = 1
-
-    while current_round <= 3:
-        right_answer = calc(randint(0, 100), randint(0, 100))
-
-        if compare(right_answer):
-            print('Correct!')
-            current_round += 1
-        else:
-            print(f"Let's try again, {name}!")
-            return
-
-    print(f'Congratulations, {name}!')
+    if engine(game):
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")
 
 
 if __name__ == '__main__':
