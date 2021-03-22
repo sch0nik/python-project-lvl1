@@ -1,18 +1,16 @@
 """
-Модуль Cli.py. Пока только функция welcom_user().
+Модуль Cli.py. Пока только функция welcome_user().
 
-welcom_user() - запрос, приветсвие и возврат тмени пользователя.
+welcome_user() - запрос, приветсвие и возврат имени пользователя.
 """
 
 import prompt
 
 
-def welcom_user():
+def welcome_user():
     """Собственно сама функция.
 
     Returns:
         Возвращает имя пользователя.
     """
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
+    return prompt.string('May I have your name? ')
