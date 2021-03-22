@@ -1,4 +1,4 @@
-# это не шебанг!/usr/bin/env python
+#!/usr/bin/env python
 
 """
 Модуль brain_games.py Пока только приветсвие и запрос имени.
@@ -10,9 +10,9 @@ from brain_games.cli import welcome_user
 
 
 def main():
-    """Главная функция."""
+    """Приветсвие."""
     print('Welcome to the Brain Games!')
-    welcome_user()
+    print(f'Hello, {welcome_user()}!')
 
 
 if __name__ == '__main__':
