@@ -16,7 +16,7 @@ def game():
     Returns:
         True или False, в зависимости от ответа пользователя.
     """
-    number_of_elements = 5 + randint(0, 5)
+    number_of_elements = 5 + randint(1, 5)
     diff = randint(1, 10)
     secret_item = randint(0, number_of_elements - 1)
     right_answer = 0
