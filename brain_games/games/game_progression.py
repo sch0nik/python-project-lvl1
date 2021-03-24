@@ -19,16 +19,16 @@ def game():
     number_of_elements = 5 + randint(0, 5)
     diff = randint(1, 10)
     secret_item = randint(0, number_of_elements - 1)
-    right_answer = 0
-    count = 0
     current_element = randint(0, 10)
     arithmetic = ''
+    expected = 0
 
     # Генерирование прогрессиии
+    count = 0
     while count < number_of_elements:
         if count == secret_item:
             arithmetic = f'{arithmetic}..'
-            right_answer = current_element
+            expected = current_element
         else:
             arithmetic = f'{arithmetic}{current_element}'
         # это пробелы между числами,
@@ -40,8 +40,8 @@ def game():
 
     print(f'Question: {arithmetic}')
     answer = string('Your answer: ')
-    if answer == str(right_answer):
+    if answer == str(expected):
         print('Correct!')
         return True
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+    print(f"'{answer}' is wrong answer ;(. Correct answer was '{expected}'.")
     return False

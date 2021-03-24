@@ -21,16 +21,16 @@ def game():
     operator = '+-*'[randint(0, 2)]
     print(f'Question: {number_a} {operator} {number_b}')
     if operator == '+':
-        right_answer = number_a + number_b
+        expected = number_a + number_b
     elif operator == '-':
-        right_answer = number_a - number_b
+        expected = number_a - number_b
     else:
-        right_answer = number_a * number_b
+        expected = number_a * number_b
 
     answer = string('Your answer: ')
-    if answer == str(right_answer):
+    if answer == str(expected):
         print('Correct!')
         return True
     else:
-        print(f'{answer} is wrong answer ;(. Correct answer was {right_answer}.')
+        print(f'{answer} is wrong answer ;(. Correct answer was {expected}.')
     return False

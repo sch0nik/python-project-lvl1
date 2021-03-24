@@ -20,11 +20,11 @@ def game():
             number_a %= number_b
         else:
             number_b %= number_a
-    right_answer = number_a + number_b
+    expected = number_a + number_b
 
     answer = string('Your answer: ')
-    if answer == str(right_answer):
+    if answer == str(expected):
         print('Correct!')
         return True
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+    print(f"'{answer}' is wrong answer ;(. Correct answer was '{expected}'.")
     return False
