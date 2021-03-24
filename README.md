@@ -7,14 +7,14 @@
 
 [![Lint](https://github.com/sch0nik/python-project-lvl1/actions/workflows/make_lint.yaml/badge.svg)](https://github.com/sch0nik/python-project-lvl1/actions/workflows/make_lint.yaml)
 
-Установка пакета brain-even и поражение https://asciinema.org/a/jjp6EzD1ApIuHC3iQp2ybhpP7
+[![asciicast](https://asciinema.org/a/OD1xi7KYuA2yhoPZ3IiQEG9y2.svg)](https://asciinema.org/a/OD1xi7KYuA2yhoPZ3IiQEG9y2)
 
-Установка пакета brain-even и победа https://asciinema.org/a/RU0lq7tGSw6jTYaCG1gMKHpdo
+[![asciicast](https://asciinema.org/a/nTSEvnfiLjzPIxTanqCmAxHEw.svg)](https://asciinema.org/a/nTSEvnfiLjzPIxTanqCmAxHEw)
 
-Игра калькулятор brain-calc https://asciinema.org/a/mhBWRX0qzm3S1uzJYG70I7rma
+[![asciicast](https://asciinema.org/a/mhBWRX0qzm3S1uzJYG70I7rma.svg)](https://asciinema.org/a/mhBWRX0qzm3S1uzJYG70I7rma)
 
-Игра НОД brain-gcd https://asciinema.org/a/WyeG4VZli7eharPM6dr037Ddp
+[![asciicast](https://asciinema.org/a/WyeG4VZli7eharPM6dr037Ddp.svg)](https://asciinema.org/a/WyeG4VZli7eharPM6dr037Ddp)
 
-Игра арифметическая прогрессия brain-progression https://asciinema.org/a/u2sLqjJYkGKWq0rTdJqJZN2fv
+[![asciicast](https://asciinema.org/a/u2sLqjJYkGKWq0rTdJqJZN2fv.svg)](https://asciinema.org/a/u2sLqjJYkGKWq0rTdJqJZN2fv)
 
-Игра на проверку простое ли число brain-prime https://asciinema.org/a/BqfeHFf6RLGEecLM6ZLWKhlZN
+[![asciicast](https://asciinema.org/a/BqfeHFf6RLGEecLM6ZLWKhlZN.svg)](https://asciinema.org/a/BqfeHFf6RLGEecLM6ZLWKhlZN)
