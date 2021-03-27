@@ -28,8 +28,7 @@ def game():
     # А еще сразу отбрасываем четные числа.
     if number % 2 == 0:
         return 'no'
-    else:
-        count = 3
-        while count * count <= number and number % count != 0:
-            count += 2
-        return 'yes' if count * count > number else 'no'
+    count = 3
+    while count * count <= number and number % count != 0:
+        count += 2
+    return 'yes' if count * count > number else 'no'
