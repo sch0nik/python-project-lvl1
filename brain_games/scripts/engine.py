@@ -7,7 +7,6 @@ NUMBER_OF_ROUNDS - количество победных раундов подр
 
 from prompt import string
 
-
 # Количество победных раундов подряд, чтобы выиграть всю игру
 NUMBER_OF_ROUNDS = 3
 
@@ -21,7 +20,6 @@ def execution(game):
     Args:
         game: функция игрового процесса
     """
-
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -34,7 +32,7 @@ def execution(game):
             current_round += 1
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{expected}'.")
+            print(f'{answer} is wrong answer ;(. Correct answer was {expected}.')
             break
 
     if current_round == NUMBER_OF_ROUNDS:

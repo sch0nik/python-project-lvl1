@@ -2,8 +2,6 @@
 
 from random import randint
 
-from prompt import string
-
 
 def game():
     """

@@ -1,7 +1,7 @@
 """Игра наибольший общий делитель (НОД)."""
 
-from prompt import string
 from brain_games.games.gcd import game
+from prompt import string
 from scripts.engine import execution
 
 

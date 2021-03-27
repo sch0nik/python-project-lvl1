@@ -1,7 +1,7 @@
 """Скрипт запуска игры арифметическая прогрессия."""
 
-from prompt import string
 from brain_games.games.progression import game
+from prompt import string
 from scripts.engine import execution
 
 

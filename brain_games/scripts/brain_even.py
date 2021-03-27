@@ -9,6 +9,7 @@ from scripts.engine import execution
 
 
 def main():
+    """Вызов игры."""
     execution(game)
 
 
