@@ -2,8 +2,6 @@
 
 from random import randint
 
-from prompt import string
-
 
 def game():
     """
@@ -15,6 +13,8 @@ def game():
     Returns:
         True или False, в зависимости от ответа пользователя.
     """
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
     number = randint(1, 1000)
     print(f'Question: {number}')
 
@@ -27,15 +27,9 @@ def game():
     # что проверяемый делитель стал больше, чем корень из number.
     # А еще сразу отбрасываем четные числа.
     if number % 2 == 0:
-        right_answer = 'no'
+        return 'no'
     else:
         count = 3
         while count * count <= number and number % count != 0:
             count += 2
-        right_answer = 'yes' if count * count > number else 'no'
-
-    answer = string('Your answer: ')
-    if answer == right_answer:
-        return True
-    print(f'{answer} is wrong answer ;(. Correct answer was {right_answer}.')
-    return False
+        return 'yes' if count * count > number else 'no'
