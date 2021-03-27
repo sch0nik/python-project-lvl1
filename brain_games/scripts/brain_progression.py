@@ -2,7 +2,7 @@
 
 from brain_games.games.progression import game
 from prompt import string
-from scripts.engine import execution
+from brain_games.scripts.engine import execution
 
 
 def main():
