@@ -5,8 +5,8 @@
 """
 
 from brain_games.cli import welcome_user
-from brain_games.games.game_engine import engine
-from brain_games.games.game_prime import game
+from scripts.engine import engine
+from brain_games.games.prime import game
 
 
 def main():
