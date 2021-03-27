@@ -2,7 +2,7 @@
 
 from prompt import string
 from brain_games.games.gcd import game
-from scripts.engine import engine
+from scripts.engine import execution
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
     print(f'Hello, {name}!')
     print('Find the greatest common divisor of given numbers.')
 
-    if engine(game):
+    if execution(game):
         print(f'Congratulations, {name}!')
     else:
         print(f"Let's try again, {name}!")

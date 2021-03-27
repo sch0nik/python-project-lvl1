@@ -6,7 +6,7 @@
 
 from prompt import string
 from brain_games.games.even import game
-from scripts.engine import engine
+from scripts.engine import execution
 
 
 def main():
@@ -16,7 +16,7 @@ def main():
     print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    if engine(game):
+    if execution(game):
         print(f'Congratulations, {name}!')
     else:
         print(f"Let's try again, {name}!")

@@ -2,7 +2,7 @@
 
 from prompt import string
 from brain_games.games.progression import game
-from scripts.engine import engine
+from scripts.engine import execution
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
     print(f'Hello, {name}!')
     print('What number is missing in the progression?')
 
-    if engine(game):
+    if execution(game):
         print(f'Congratulations, {name}!')
     else:
         print(f"Let's try again, {name}!")

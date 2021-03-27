@@ -10,7 +10,7 @@ NUMBER_OF_RAUNDS - количество победных раундов подр
 NUMBER_OF_RAUNDS = 3
 
 
-def engine(game):
+def execution(game):
     """
     Сам движок.
 
