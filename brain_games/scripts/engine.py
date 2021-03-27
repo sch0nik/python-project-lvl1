@@ -34,7 +34,7 @@ def execution(game):
             current_round += 1
             print('Correct!')
         else:
-            print(f'{answer} is wrong answer ;(. Correct answer was {expected}.')
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{expected}'.")
             break
 
     if current_round == NUMBER_OF_ROUNDS:

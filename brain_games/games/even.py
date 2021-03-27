@@ -15,12 +15,8 @@ def game():
     Returns:
         True или False, в зависимости от ответа пользователя.
     """
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
     number = randint(0, 1000)
-    right_answer = 'yes' if number % 2 == 0 else 'no'
     print(f'Question: {number}')
-    answer = string('Your answer: ')
-    if answer == right_answer:
-        print('Correct!')
-        return True
-    print(f'{answer} is wrong answer ;(. Correct answer was {right_answer}.')
-    return False
+    return 'yes' if number % 2 == 0 else 'no'
