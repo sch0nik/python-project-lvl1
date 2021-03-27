@@ -2,12 +2,14 @@
 Игровой движок.
 
 Общая игровая логика.
-NUMBER_OF_RAUNDS - количество победных раундов подряд.
+NUMBER_OF_ROUNDS - количество победных раундов подряд.
 """
+
+from prompt import string
 
 
 # Количество победных раундов подряд, чтобы выиграть всю игру
-NUMBER_OF_RAUNDS = 3
+NUMBER_OF_ROUNDS = 3
 
 
 def execution(game):
@@ -18,15 +20,24 @@ def execution(game):
 
     Args:
         game: функция игрового процесса
-
-    Returns:
-        True или False в зависимости от результата
     """
+
+    print('Welcome to the Brain Games!')
+    name = string('May I have your name? ')
+    print(f'Hello, {name}!')
+
     current_round = 0
-    while current_round < NUMBER_OF_RAUNDS:
-        if game():
+    while current_round < NUMBER_OF_ROUNDS:
+        expected = game()
+        answer = string('Your answer: ')
+        if answer == expected:
             current_round += 1
+            print('Correct!')
         else:
+            print(f'{answer} is wrong answer ;(. Correct answer was {expected}.')
             break
 
-    return current_round == NUMBER_OF_RAUNDS
+    if current_round == NUMBER_OF_ROUNDS:
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")

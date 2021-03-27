@@ -2,8 +2,6 @@
 
 from random import choice, randint
 
-from prompt import string
-
 
 def game():
     """
@@ -16,6 +14,8 @@ def game():
         Возвращает True или False,
         в зависимости оттого, правильно ли решен пример.
     """
+    print('What is the result of the expression?')
+
     number_a = randint(0, 100)
     number_b = randint(0, 100)
     operator = choice('+-*')
@@ -27,10 +27,4 @@ def game():
     else:
         expected = number_a * number_b
 
-    answer = string('Your answer: ')
-    if answer == str(expected):
-        print('Correct!')
-        return True
-    else:
-        print(f'{answer} is wrong answer ;(. Correct answer was {expected}.')
-    return False
+    return str(expected)
