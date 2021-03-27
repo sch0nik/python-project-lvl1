@@ -1,6 +1,6 @@
 """Главный элемент игры Calc."""
 
-from random import randint
+from random import choice, randint
 
 from prompt import string
 
@@ -18,7 +18,7 @@ def game():
     """
     number_a = randint(0, 100)
     number_b = randint(0, 100)
-    operator = '+-*'[randint(0, 2)]
+    operator = choice('+-*')
     print(f'Question: {number_a} {operator} {number_b}')
     if operator == '+':
         expected = number_a + number_b
