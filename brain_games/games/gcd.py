@@ -2,8 +2,6 @@
 
 from random import randint
 
-from prompt import string
-
 
 def game():
     """
@@ -12,6 +10,7 @@ def game():
     Returns:
         True или False, в зависимости от ответа пользователя.
     """
+    print('Find the greatest common divisor of given numbers.')
     number_a = randint(1, 100)
     number_b = randint(1, 100)
     print(f'Question: {number_a} {number_b}')
@@ -20,11 +19,5 @@ def game():
             number_a %= number_b
         else:
             number_b %= number_a
-    expected = number_a + number_b
 
-    answer = string('Your answer: ')
-    if answer == str(expected):
-        print('Correct!')
-        return True
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{expected}'.")
-    return False
+    return str(number_a + number_b)
