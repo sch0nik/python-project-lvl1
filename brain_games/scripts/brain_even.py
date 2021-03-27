@@ -4,7 +4,7 @@
 Игра спрашивает имя и задает число. Вам нужно ответить только 'yes' или 'no'.
 """
 
-from brain_games.cli import welcome_user
+from prompt import string
 from brain_games.games.even import game
 from scripts.engine import engine
 
@@ -12,7 +12,7 @@ from scripts.engine import engine
 def main():
     """Тело игры."""
     print('Welcome to the Brain Games!')
-    name = welcome_user()
+    name = string('May I have your name? ')
     print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
