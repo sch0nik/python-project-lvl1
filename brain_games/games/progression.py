@@ -12,9 +12,9 @@ def game():
     Нужно узнать его.
 
     Returns:
-        True или False, в зависимости от ответа пользователя.
+        Возвращает условие игры, вопрос и верный результат.
     """
-    print('What number is missing in the progression?')
+    condition = 'What number is missing in the progression?'
 
     number_of_elements = 5 + randint(0, 5)
     diff = randint(1, 10)
@@ -38,5 +38,5 @@ def game():
         count += 1
         current_element += diff
 
-    print(f'Question: {arithmetic}')
-    return str(expected)
+    question = f'Question: {arithmetic}'
+    return condition, question, str(expected)
