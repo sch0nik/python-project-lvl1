@@ -11,12 +11,12 @@ def game():
     простое ли оно?
 
     Returns:
-        True или False, в зависимости от ответа пользователя.
+        Возвращает условие игры, вопрос и верный результат.
     """
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    condition = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
     number = randint(1, 1000)
-    print(f'Question: {number}')
+    question = f'Question: {number}'
 
     # Числа есть простые и составные. У любого составного числа
     # есть собственный (то есть не равный 1) делитель,
@@ -27,8 +27,10 @@ def game():
     # что проверяемый делитель стал больше, чем корень из number.
     # А еще сразу отбрасываем четные числа.
     if number % 2 == 0:
-        return 'no'
+        return condition, question, 'no'
     count = 3
     while count * count <= number and number % count != 0:
         count += 2
-    return 'yes' if count * count > number else 'no'
+    expected = 'yes' if count * count > number else 'no'
+
+    return condition, question, expected
