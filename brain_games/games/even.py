@@ -13,9 +13,10 @@ def game():
     Returns:
         Возвращает условие игры, вопрос и верный результат.
     """
-    condition = 'Answer "yes" if the number is even, otherwise answer "no".'
-
     number = randint(0, 1000)
-    question = f'Question: {number}'
-    expected = 'yes' if number % 2 == 0 else 'no'
-    return condition, question, expected
+
+    return (
+        'Answer "yes" if the number is even, otherwise answer "no".',
+        f'Question: {number}',
+        'yes' if number % 2 == 0 else 'no',
+    )

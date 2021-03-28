@@ -10,7 +10,6 @@ def game():
     Returns:
         Возвращает условие игры, вопрос и верный результат.
     """
-    condition = 'Find the greatest common divisor of given numbers.'
     number_a = randint(1, 100)
     number_b = randint(1, 100)
     question = f'Question: {number_a} {number_b}'
@@ -20,4 +19,8 @@ def game():
         else:
             number_b %= number_a
 
-    return condition, question, str(number_a + number_b)
+    return (
+        'Find the greatest common divisor of given numbers.',
+        question,
+        str(number_a + number_b),
+    )

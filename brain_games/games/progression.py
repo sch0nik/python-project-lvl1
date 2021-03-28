@@ -14,8 +14,6 @@ def game():
     Returns:
         Возвращает условие игры, вопрос и верный результат.
     """
-    condition = 'What number is missing in the progression?'
-
     number_of_elements = 5 + randint(0, 5)
     diff = randint(1, 10)
     secret_item = randint(0, number_of_elements - 1)
@@ -38,5 +36,8 @@ def game():
         count += 1
         current_element += diff
 
-    question = f'Question: {arithmetic}'
-    return condition, question, str(expected)
+    return (
+        'What number is missing in the progression?',
+        f'Question: {arithmetic}',
+        str(expected),
+    )

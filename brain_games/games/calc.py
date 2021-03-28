@@ -13,12 +13,9 @@ def game():
     Returns:
         Возвращает условие игры, вопрос и верный результат.
     """
-    condition = 'What is the result of the expression?'
-
     number_a = randint(0, 100)
     number_b = randint(0, 100)
     operator = choice('+-*')
-    question = f'Question: {number_a} {operator} {number_b}'
     if operator == '+':
         expected = number_a + number_b
     elif operator == '-':
@@ -26,4 +23,8 @@ def game():
     else:
         expected = number_a * number_b
 
-    return condition, question, str(expected)
+    return (
+        'What is the result of the expression?',
+        f'Question: {number_a} {operator} {number_b}',
+        str(expected),
+    )

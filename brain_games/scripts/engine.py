@@ -29,7 +29,9 @@ def execution(game):
         condition, question, expected = game()
         if current_round == 0:
             print(condition)
+
         print(question)
+
         answer = string('Your answer: ')
         if answer == expected:
             current_round += 1
