@@ -26,7 +26,10 @@ def execution(game):
 
     current_round = 0
     while current_round < NUMBER_OF_ROUNDS:
-        expected = game()
+        condition, question, expected = game()
+        if current_round == 0:
+            print(condition)
+        print(question)
         answer = string('Your answer: ')
         if answer == expected:
             current_round += 1
