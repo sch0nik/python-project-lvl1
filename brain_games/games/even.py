@@ -11,10 +11,11 @@ def game():
     и спрашивает ответ.
 
     Returns:
-        True или False, в зависимости от ответа пользователя.
+        Возвращает условие игры, вопрос и верный результат.
     """
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    condition = 'Answer "yes" if the number is even, otherwise answer "no".'
 
     number = randint(0, 1000)
-    print(f'Question: {number}')
-    return 'yes' if number % 2 == 0 else 'no'
+    question = f'Question: {number}'
+    expected = 'yes' if number % 2 == 0 else 'no'
+    return condition, question, expected
