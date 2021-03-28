@@ -2,8 +2,6 @@
 
 from random import randint
 
-from prompt import string
-
 
 def game():
     """
@@ -16,6 +14,8 @@ def game():
     Returns:
         True или False, в зависимости от ответа пользователя.
     """
+    print('What number is missing in the progression?')
+
     number_of_elements = 5 + randint(0, 5)
     diff = randint(1, 10)
     secret_item = randint(0, number_of_elements - 1)
@@ -39,9 +39,4 @@ def game():
         current_element += diff
 
     print(f'Question: {arithmetic}')
-    answer = string('Your answer: ')
-    if answer == str(expected):
-        print('Correct!')
-        return True
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{expected}'.")
-    return False
+    return str(expected)

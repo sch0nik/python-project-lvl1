@@ -2,20 +2,11 @@
 
 from brain_games.games.progression import game
 from brain_games.scripts.engine import execution
-from prompt import string
 
 
 def main():
     """Тело игры."""
-    print('Welcome to the Brain Games!')
-    name = string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What number is missing in the progression?')
-
-    if execution(game):
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
+    execution(game)
 
 
 if __name__ == '__main__':
