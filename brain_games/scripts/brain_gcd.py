@@ -1,12 +1,12 @@
 """Игра наибольший общий делитель (НОД)."""
 
 from brain_games.games.gcd import game
-from brain_games.scripts.engine import execution
+from brain_games.scripts.engine import execute
 
 
 def main():
     """Тело игры."""
-    execution(game)
+    execute(game)
 
 
 if __name__ == '__main__':

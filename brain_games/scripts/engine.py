@@ -11,7 +11,7 @@ from prompt import string
 NUMBER_OF_ROUNDS = 3
 
 
-def execution(game):
+def execute(game):
     """
     Сам движок.
 
