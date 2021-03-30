@@ -1,12 +1,12 @@
 """Скрипт запуска игры арифметическая прогрессия."""
 
 from brain_games.engine import execute
-from brain_games.games.progression import generating_game_values
+from brain_games.games import progression
 
 
 def main():
     """Тело игры."""
-    execute(generating_game_values)
+    execute(progression)
 
 
 if __name__ == '__main__':

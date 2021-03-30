@@ -23,13 +23,11 @@ def execute(game):
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
+    print(game.RULES_OF_THE_GAME)
 
     current_round = 0
     while current_round < NUMBER_OF_ROUNDS:
-        condition, question, expected = game()
-        if current_round == 0:
-            print(condition)
-
+        question, expected = game.generating_game_values()
         print(question)
 
         answer = string('Your answer: ')

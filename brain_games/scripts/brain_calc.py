@@ -5,12 +5,12 @@
 """
 
 from brain_games.engine import execute
-from brain_games.games.calc import generating_game_values
+from brain_games.games import calc
 
 
 def main():
     """Вызов игры."""
-    execute(generating_game_values)
+    execute(calc)
 
 
 if __name__ == '__main__':

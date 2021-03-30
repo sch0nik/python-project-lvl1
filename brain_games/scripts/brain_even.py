@@ -5,12 +5,12 @@
 """
 
 from brain_games.engine import execute
-from brain_games.games.even import generating_game_values
+from brain_games.games import even
 
 
 def main():
     """Вызов игры."""
-    execute(generating_game_values)
+    execute(even)
 
 
 if __name__ == '__main__':

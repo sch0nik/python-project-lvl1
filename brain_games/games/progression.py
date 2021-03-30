@@ -50,7 +50,6 @@ def generating_game_values():
     string_progression = f'{string_progression}{temp_str}'
 
     return (
-        RULES_OF_THE_GAME,
         f'Question: {string_progression}',
         arithmetic[secret_index],
     )

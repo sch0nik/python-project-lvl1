@@ -2,6 +2,8 @@
 
 from random import randint
 
+RULES_OF_THE_GAME = 'Find the greatest common divisor of given numbers.'
+
 
 def generating_game_values():
     """
@@ -20,7 +22,6 @@ def generating_game_values():
             number_b %= number_a
 
     return (
-        'Find the greatest common divisor of given numbers.',
         question,
         str(number_a + number_b),
     )

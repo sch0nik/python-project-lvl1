@@ -26,7 +26,6 @@ def generating_game_values():
         expected = number_a * number_b
 
     return (
-        RULES_OF_THE_GAME,
         f'Question: {number_a} {operator} {number_b}',
         str(expected),
     )

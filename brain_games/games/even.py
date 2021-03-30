@@ -2,6 +2,8 @@
 
 from random import randint
 
+RULES_OF_THE_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def generating_game_values():
     """
@@ -16,7 +18,6 @@ def generating_game_values():
     number = randint(0, 1000)
 
     return (
-        'Answer "yes" if the number is even, otherwise answer "no".',
         f'Question: {number}',
         'yes' if number % 2 == 0 else 'no',
     )

@@ -5,12 +5,12 @@
 """
 
 from brain_games.engine import execute
-from brain_games.games.prime import generating_game_values
+from brain_games.games import prime
 
 
 def main():
     """Тело игры."""
-    execute(generating_game_values)
+    execute(prime)
 
 
 if __name__ == '__main__':
