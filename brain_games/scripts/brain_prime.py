@@ -5,7 +5,7 @@
 """
 
 from brain_games.games.prime import game
-from brain_games.scripts.engine import execute
+from brain_games.engine import execute
 
 
 def main():

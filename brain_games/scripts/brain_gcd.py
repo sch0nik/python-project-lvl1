@@ -1,7 +1,7 @@
 """Игра наибольший общий делитель (НОД)."""
 
 from brain_games.games.gcd import game
-from brain_games.scripts.engine import execute
+from brain_games.engine import execute
 
 
 def main():
