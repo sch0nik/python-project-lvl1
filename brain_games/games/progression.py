@@ -33,7 +33,7 @@ def generating_game_values():
     Нужно узнать его.
 
     Returns:
-        Возвращает условие игры, вопрос и верный результат.
+        Возвращает вопрос и верный результат.
     """
     arithmetic = generating_progression()
 
