@@ -2,8 +2,10 @@
 
 from random import choice, randint
 
+RULES_OF_THE_GAME = 'What is the result of the expression?'
 
-def game():
+
+def generating_game_values():
     """
     Игра Calc.
 
@@ -24,7 +26,7 @@ def game():
         expected = number_a * number_b
 
     return (
-        'What is the result of the expression?',
+        RULES_OF_THE_GAME,
         f'Question: {number_a} {operator} {number_b}',
         str(expected),
     )

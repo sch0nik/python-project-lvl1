@@ -3,7 +3,7 @@
 from random import randint
 
 
-def game():
+def generating_game_values():
     """
     Сама игра.
 
