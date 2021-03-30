@@ -1,7 +1,7 @@
 """Скрипт запуска игры арифметическая прогрессия."""
 
-from brain_games.games.progression import generating_game_values
 from brain_games.engine import execute
+from brain_games.games.progression import generating_game_values
 
 
 def main():

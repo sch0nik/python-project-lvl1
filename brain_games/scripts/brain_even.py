@@ -4,8 +4,8 @@
 Игра спрашивает имя и задает число. Вам нужно ответить только 'yes' или 'no'.
 """
 
-from brain_games.games.even import generating_game_values
 from brain_games.engine import execute
+from brain_games.games.even import generating_game_values
 
 
 def main():
