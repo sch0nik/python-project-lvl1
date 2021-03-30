@@ -2,6 +2,27 @@
 
 from random import randint
 
+RULES_OF_THE_GAME = 'What number is missing in the progression?'
+
+
+def generating_progression():
+    """
+    Генерироване арифметической прогрессии.
+
+    Returns:
+        Возвращает список с арифметической прогрессией.
+    """
+    number_of_elements = randint(5, 10)
+    diff = randint(1, 10)
+    arithmetic = [randint(1, 10)]
+
+    for index in range(number_of_elements):
+        if index == 0:
+            continue
+        arithmetic.append(arithmetic[index - 1] + diff)
+
+    return arithmetic
+
 
 def generating_game_values():
     """
@@ -14,30 +35,22 @@ def generating_game_values():
     Returns:
         Возвращает условие игры, вопрос и верный результат.
     """
-    number_of_elements = 5 + randint(0, 5)
-    diff = randint(1, 10)
-    secret_item = randint(0, number_of_elements - 1)
-    current_element = randint(0, 10)
-    arithmetic = ''
-    expected = 0
+    arithmetic = generating_progression()
 
-    # Генерирование прогрессиии
-    count = 0
-    while count < number_of_elements:
-        if count == secret_item:
-            arithmetic = f'{arithmetic}..'
-            expected = current_element
-        else:
-            arithmetic = f'{arithmetic}{current_element}'
-        # это пробелы между числами,
-        # если последний элемент, то пробел не будет ставится
-        if count != number_of_elements - 1:
-            arithmetic = f'{arithmetic} '
-        count += 1
-        current_element += diff
+    secret_index = randint(0, len(arithmetic) - 1)
+
+    # Получение строки с прогрессией
+    arithmetic = list(map(str, arithmetic))
+
+    # И замена секретного элемента на ".."
+    string_progression = ' '.join(arithmetic[:secret_index])
+    string_progression = f'{string_progression} .. '
+
+    temp_str = ' '.join(arithmetic[secret_index + 1:])
+    string_progression = f'{string_progression}{temp_str}'
 
     return (
-        'What number is missing in the progression?',
-        f'Question: {arithmetic}',
-        str(expected),
+        RULES_OF_THE_GAME,
+        f'Question: {string_progression}',
+        arithmetic[secret_index],
     )
