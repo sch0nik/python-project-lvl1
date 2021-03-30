@@ -44,7 +44,10 @@ def generating_game_values():
 
     # И замена секретного элемента на ".."
     string_progression = ' '.join(arithmetic[:secret_index])
-    string_progression = f'{string_progression} .. '
+
+    temp_str = '.. ' if secret_index == 0 else ' .. '
+
+    string_progression = f'{string_progression}{temp_str}'
 
     temp_str = ' '.join(arithmetic[secret_index + 1:])
     string_progression = f'{string_progression}{temp_str}'
