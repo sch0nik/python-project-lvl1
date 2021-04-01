@@ -3,8 +3,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
-
 [![Lint](https://github.com/sch0nik/python-project-lvl1/actions/workflows/make_lint.yaml/badge.svg)](https://github.com/sch0nik/python-project-lvl1/actions/workflows/make_lint.yaml)
 
 [![asciicast](https://asciinema.org/a/OD1xi7KYuA2yhoPZ3IiQEG9y2.svg)](https://asciinema.org/a/OD1xi7KYuA2yhoPZ3IiQEG9y2)
