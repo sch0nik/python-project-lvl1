@@ -5,7 +5,7 @@ from random import randint
 RULES_OF_THE_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def generating_game_values():
+def generate_game_values():
     """
     Сама игра.
 

@@ -5,7 +5,7 @@ from random import choice, randint
 RULES_OF_THE_GAME = 'What is the result of the expression?'
 
 
-def generating_game_values():
+def generate_game_values():
     """
     Игра Calc.
 

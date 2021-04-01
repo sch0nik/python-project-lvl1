@@ -27,7 +27,7 @@ def execute(game):
 
     current_round = 0
     while current_round < NUMBER_OF_ROUNDS:
-        question, expected = game.generating_game_values()
+        question, expected = game.generate_game_values()
         print(question)
 
         answer = string('Your answer: ')

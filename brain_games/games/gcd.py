@@ -25,7 +25,7 @@ def getting_the_gcd(number_a, number_b):
     return number_a + number_b
 
 
-def generating_game_values():
+def generate_game_values():
     """
     Игровой процесс.
 

@@ -24,7 +24,7 @@ def generating_progression():
     return arithmetic
 
 
-def generating_game_values():
+def generate_game_values():
     """
     Игровой процесс.
 

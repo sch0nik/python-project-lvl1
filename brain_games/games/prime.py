@@ -36,7 +36,7 @@ def is_prime(number):
     return count * count > number
 
 
-def generating_game_values():
+def generate_game_values():
     """
     Игровой процесс.
 
