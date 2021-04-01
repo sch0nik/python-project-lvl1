@@ -39,9 +39,7 @@ def execute(game):
                 f'{answer} is wrong answer ;(. Correct answer was {expected}.'
             )
             print(answer)
-            break
+            print(f"Let's try again, {name}!")
+            return
 
-    if current_round == NUMBER_OF_ROUNDS:
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
+    print(f'Congratulations, {name}!')
