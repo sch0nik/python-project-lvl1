@@ -40,17 +40,14 @@ def generate_game_values():
     # Получение строки с прогрессией
     arithmetic = list(map(str, arithmetic))
 
+    # правильный ответ
+    expected = arithmetic[secret_index]
+
     # И замена секретного элемента на ".."
-    string_progression = ' '.join(arithmetic[:secret_index])
-
-    temp_str = '.. ' if secret_index == 0 else ' .. '
-
-    string_progression = f'{string_progression}{temp_str}'
-
-    temp_str = ' '.join(arithmetic[secret_index + 1:])
-    string_progression = f'{string_progression}{temp_str}'
+    arithmetic[secret_index] = '..'
+    ' '.join(arithmetic)  # noqa: WPS326
 
     return (
-        f'Question: {string_progression}',
-        arithmetic[secret_index],
+        f'Question: {arithmetic}',
+        expected,
     )
