@@ -5,7 +5,7 @@ from random import randint
 RULES_OF_THE_GAME = 'What number is missing in the progression?'
 
 
-def generating_progression():
+def generate_progression():
     """
     Генерироване арифметической прогрессии.
 
@@ -14,12 +14,10 @@ def generating_progression():
     """
     number_of_elements = randint(5, 10)
     diff = randint(1, 10)
-    arithmetic = [randint(1, 10)]
+    arithmetic = []
 
     for index in range(number_of_elements):
-        if index == 0:
-            continue
-        arithmetic.append(arithmetic[index - 1] + diff)
+        arithmetic.append(index * diff + diff)
 
     return arithmetic
 
@@ -35,7 +33,7 @@ def generate_game_values():
     Returns:
         Возвращает вопрос и верный результат.
     """
-    arithmetic = generating_progression()
+    arithmetic = generate_progression()
 
     secret_index = randint(0, len(arithmetic) - 1)
 
