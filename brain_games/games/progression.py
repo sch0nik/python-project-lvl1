@@ -45,9 +45,9 @@ def generate_game_values():
 
     # И замена секретного элемента на ".."
     arithmetic[secret_index] = '..'
-    ' '.join(arithmetic)  # noqa: WPS326
+    line = ' '.join(arithmetic)
 
     return (
-        f'Question: {arithmetic}',
+        f'Question: {line}',
         expected,
     )
