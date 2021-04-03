@@ -35,10 +35,9 @@ def execute(game):
             current_round += 1
             print('Correct!')
         else:
-            answer = (
-                f'{answer} is wrong answer ;(. Correct answer was {expected}.'
+            print(
+                f'{answer} is wrong answer ;(. Correct answer was {expected}.',
             )
-            print(answer)
             print(f"Let's try again, {name}!")
             return
 
