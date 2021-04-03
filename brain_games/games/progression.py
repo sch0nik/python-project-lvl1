@@ -31,7 +31,7 @@ def generate_game_values():
     Нужно узнать его.
 
     Returns:
-        Возвращает вопрос и верный результат.
+        Возвращает строку с прогрессией и верный ответ.
     """
     progression = generate_progression()
 
