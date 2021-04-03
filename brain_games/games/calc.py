@@ -5,6 +5,24 @@ from random import choice, randint
 RULES_OF_THE_GAME = 'What is the result of the expression?'
 
 
+def calculating(number_a, number_b, operator):
+    """ВЫчисление значения в зависимости от оператора.
+
+    Args:
+        number_a: целое число.
+        number_b: целое число.
+        operator: символ арифметической операции.
+
+    Returns:
+        Рзультат вычисления.
+    """
+    if operator == '+':
+        return number_a + number_b
+    elif operator == '-':
+        return number_a - number_b
+    return number_a * number_b
+
+
 def generate_game_values():
     """
     Игра Calc.
@@ -18,12 +36,7 @@ def generate_game_values():
     number_a = randint(0, 100)
     number_b = randint(0, 100)
     operator = choice('+-*')
-    if operator == '+':
-        expected = number_a + number_b
-    elif operator == '-':
-        expected = number_a - number_b
-    else:
-        expected = number_a * number_b
+    expected = calculating(number_a, number_b, operator)
 
     return (
         f'Question: {number_a} {operator} {number_b}',
