@@ -26,7 +26,7 @@ def is_prime(number):
     Returns:
         True или False, в зависимоости от результата.
     """
-    if number % 2 == 0:
+    if number % 2 == 0 or number < 2:
         return False
 
     count = 3
@@ -48,4 +48,4 @@ def generate_game_values():
     """
     number = randint(1, 1000)
 
-    return f'Question: {number}', 'yes' if is_prime(number) else 'no'
+    return str(number), 'yes' if is_prime(number) else 'no'

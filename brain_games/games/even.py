@@ -18,6 +18,6 @@ def generate_game_values():
     number = randint(0, 1000)
 
     return (
-        f'Question: {number}',
+        str(number),
         'yes' if number % 2 == 0 else 'no',
     )

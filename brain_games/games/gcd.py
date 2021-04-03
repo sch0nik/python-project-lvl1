@@ -34,7 +34,7 @@ def generate_game_values():
     """
     number_a = randint(1, 100)
     number_b = randint(1, 100)
-    question = f'Question: {number_a} {number_b}'
+    question = f'{number_a} {number_b}'
 
     return (
         question,

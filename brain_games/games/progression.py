@@ -48,6 +48,6 @@ def generate_game_values():
     question = ' '.join(progression)
 
     return (
-        f'Question: {question}',
+        question,
         expected,
     )

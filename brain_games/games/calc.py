@@ -37,8 +37,9 @@ def generate_game_values():
     number_b = randint(0, 100)
     operator = choice('+-*')
     expected = calculating(number_a, number_b, operator)
+    question = f'{number_a} {operator} {number_b}'
 
     return (
-        f'Question: {number_a} {operator} {number_b}',
+        question,
         str(expected),
     )
