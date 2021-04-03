@@ -26,8 +26,13 @@ def is_prime(number):
     Returns:
         True или False, в зависимоости от результата.
     """
+    # Отсекаются отрицательные числа, 0 и 1
     if number % 2 == 0 or number < 2:
         return False
+
+    # 2 тоже простое число
+    if number == 2:
+        return True
 
     count = 3
     while count * count <= number and number % count != 0:
