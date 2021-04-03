@@ -45,9 +45,9 @@ def generate_game_values():
 
     # И замена секретного элемента на ".."
     arithmetic[secret_index] = '..'
-    line = ' '.join(arithmetic)
+    question = ' '.join(arithmetic)
 
     return (
-        f'Question: {line}',
+        f'Question: {question}',
         expected,
     )
