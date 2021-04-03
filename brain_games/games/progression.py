@@ -33,19 +33,19 @@ def generate_game_values():
     Returns:
         Возвращает вопрос и верный результат.
     """
-    arithmetic = generate_progression()
+    progression = generate_progression()
 
-    secret_index = randint(0, len(arithmetic) - 1)
+    secret_index = randint(0, len(progression) - 1)
 
     # Получение строки с прогрессией
-    arithmetic = list(map(str, arithmetic))
+    progression = list(map(str, progression))
 
     # правильный ответ
-    expected = arithmetic[secret_index]
+    expected = progression[secret_index]
 
     # И замена секретного элемента на ".."
-    arithmetic[secret_index] = '..'
-    question = ' '.join(arithmetic)
+    progression[secret_index] = '..'
+    question = ' '.join(progression)
 
     return (
         f'Question: {question}',
