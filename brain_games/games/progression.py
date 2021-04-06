@@ -14,12 +14,12 @@ def generate_progression():
     """
     number_of_elements = randint(5, 10)
     diff = randint(1, 10)
-    arithmetic = []
+    progression = []
 
     for index in range(number_of_elements):
-        arithmetic.append(index * diff + diff)
+        progression.append(index * diff + diff)
 
-    return arithmetic
+    return progression
 
 
 def generate_game_values():
